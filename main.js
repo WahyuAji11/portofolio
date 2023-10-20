@@ -32,4 +32,18 @@ function onFormSubmit(e) {
         $(subject).val("")
         $(message).val("")
     }
+
+    event.preventDefault();
+}
+
+function openEmailClient() {
+    const destinationEmail = "zerostudio2001@gmail.com";
+    const subject = document.getElementById("inp_subject").value;
+    const message = document.getElementById("inp_message").value;
+
+    // Compose the email link with the destination email, subject, and message
+    const mailtoLink = `mailto:${destinationEmail}?subject=${subject}&body=${message}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoLink;
 }

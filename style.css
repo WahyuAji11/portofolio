@@ -164,6 +164,37 @@ work-img img{
     .home img {
         width: 50%;
     }
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+    
+    .col-12 {
+        width: 100%; /* Make columns full width */
+    }
+    
+    .work-img {
+        text-align: center; /* Center images in the column */
+    }
+
+    .work-img {
+        display: grid;
+        grid-template-columns: 1fr; /* Create a single column */
+        gap: 16px;
+    }
+    
+    /* Assign grid areas to your images */
+    #work-1 {
+        grid-area: work-1;
+    }
+    
+    #work-2 {
+        grid-area: work-2;
+    }
+    
+    #work-3 {
+        grid-area: work-3;
+    }
+    
 }
 
 @media only screen and (max-width: 576px) {

@@ -87,10 +87,10 @@
     </section>
     <section id="work" class="work container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col-5">
+            <div class="col-12 col-md-5">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae sequi. Eius ad iure et rerum eveniet harum id amet nostrum placeat autem voluptates accusamus nam nulla quidem, officiis culpa?</p>
             </div>
-            <div class="col-6 work-img">
+            <div class="col-12 col-md-6 work-img">
                 <div id="work-1" class="work-img-item">
                     <img src="images/work-1.png" alt="work-1" id="work-1">
                 </div>
@@ -102,7 +102,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <section id="contact" class="contact container">
         <div class="row d-flex align-item-center gap-5">
@@ -124,7 +123,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5">
-                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                <form class="contact-form" onsubmit="onFormSubmit(event)" onsubmit="openEmailClient()">
                     <div class="mb-3">
                       <label for="inp_email" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="inp_email" placeholder="Your Email" required>
